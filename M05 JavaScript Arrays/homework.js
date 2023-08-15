@@ -179,6 +179,12 @@ function tablaDelSeis() {
   // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
   // Tu código:
+  var array = [];
+  for (var i = 0; i <= 10; i++) {
+    var resultado = 6 * i;
+    array.push(resultado);
+  }
+  return array;
 }
 
 function mayorACien(array) {
@@ -228,12 +234,14 @@ function continueStatement(num) {
   var array = [];
   var suma = num;
   for (var i = 0; i < 10; i++) {
-    if (i === 5 && num === 5) {
+    if (i === 5) {
       continue;
+    } else {
       suma = suma + 2;
       array.push(suma);
     }
   }
+  return array;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
